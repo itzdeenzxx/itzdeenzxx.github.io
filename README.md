@@ -5,6 +5,8 @@
 ![GitHub Followers](https://img.shields.io/github/followers/addeen?style=social)
 ![Profile Views](https://komarev.com/ghpvc/?username=addeen&color=green)
 
+![Addeen's Photo](https://i.ibb.co/7WwNGMh/IMG-4579.jpg) <!-- รูปภาพที่คุณให้มา -->
+
 ### 🌿 About Me
 Passionate software developer transforming complex challenges into elegant solutions. I blend technology with creativity, crafting code that grows like a living ecosystem.
 
