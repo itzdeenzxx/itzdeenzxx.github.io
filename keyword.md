@@ -1,64 +1,37 @@
-<style>
-:root {
-    --primary-blue: #2c3e50;
-    --background-gradient: linear-gradient(45deg, #e0f2fe, #bae6fd, #93c5fd);
-}
+<head>
+    <meta charset="UTF-8">
+    <title>การ Clearing ข้อมูล: มุมมองจาก CISSP, NIST, และ AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #2c3e50;
+            --background-gradient: linear-gradient(45deg, #e0f2fe, #bae6fd, #93c5fd);
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: var(--background-gradient);
+            line-height: 1.6;
+        }
+        .floating-emoji {
+            position: absolute;
+            opacity: 0.7;
+            animation: float 10s infinite;
+            z-index: -1;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-50px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="container mx-auto px-4 py-8 relative">
+    <div id="emoji-container" class="fixed inset-0 pointer-events-none"></div>
 
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background: var(--background-gradient);
-    color: var(--primary-blue);
-}
-
-h1, h2 {
-    color: var(--primary-blue);
-    border-bottom: 2px solid rgba(44, 62, 80, 0.2);
-    padding-bottom: 10px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-th, td {
-    border: 1px solid #9ecaed;
-    padding: 12px;
-    text-align: left;
-}
-
-th {
-    background-color: #e6f2ff;
-    font-weight: bold;
-}
-
-tr:nth-child(even) {
-    background-color: #f0f8ff;
-}
-
-tr:hover {
-    background-color: #e6f2ff;
-    transition: background-color 0.3s ease;
-}
-
-code {
-    background-color: #f4f4f4;
-    padding: 2px 4px;
-    border-radius: 4px;
-}
-
-.emoji {
-    margin-right: 10px;
-}
-</style>
-
-# 📚 การ Clearing ข้อมูล: มุมมองจาก CISSP, NIST, และ AI 🔒
+    <div class="bg-white shadow-lg rounded-lg p-8">
+        <h1 class="text-3xl font-bold text-center mb-8 text-primary-blue">
+            📚 การ Clearing ข้อมูล: มุมมอง CISSP, NIST, และ AI 🔒
+        </h1>
 
 ## ความหมายของการ Clearing
 
@@ -130,3 +103,26 @@ code {
 ## บทสรุป 🏁
 
 การ Clearing เป็นกระบวนการที่สำคัญในการปกป้องข้อมูลที่ละเอียดอ่อน การเลือกวิธีที่เหมาะสมขึ้นอยู่กับบริบทและความต้องการด้านความปลอดภัย
+</div>
+
+    <script>
+        const emojis = ['📚', '🔒', '🛡️', '💾', '🔍', '🖥️', '📊', '🔐'];
+        const container = document.getElementById('emoji-container');
+
+        function createFloatingEmoji() {
+            const emoji = document.createElement('div');
+            emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+            emoji.classList.add('floating-emoji', 'text-4xl');
+            emoji.style.left = `${Math.random() * 100}%`;
+            emoji.style.animationDuration = `${10 + Math.random() * 10}s`;
+            container.appendChild(emoji);
+
+            setTimeout(() => {
+                container.removeChild(emoji);
+            }, 20000);
+        }
+
+        // Create emojis every 2 seconds
+        setInterval(createFloatingEmoji, 2000);
+    </script>
+</body>
