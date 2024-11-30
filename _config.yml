@@ -1,0 +1,25 @@
+theme: minimal
+title: Addeen Salaehsakul | Digital Nature Developer
+description: 🌿 Bridging Technology and Nature through Innovative Code
+show_downloads: false
+google_analytics: UA-XXXXXXXX-X
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Customize sidebar
+logo: /assets/img/profile.png
+
+# Social links
+github_username: addeen
+linkedin_username: addeens
+twitter_username: addeen_dev
+
+# Additional site settings
+timezone: Asia/Bangkok
+encoding: UTF-8
+
+# Custom styling
+sass:
+  style: compressed
