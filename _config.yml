@@ -1,4 +1,4 @@
-theme: jekyll-theme-slate
+theme: minima
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
