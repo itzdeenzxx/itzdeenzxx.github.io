@@ -39,24 +39,23 @@
         }
 
         .floating-emoji {
-        position: absolute;
-        font-size: 30px;
-        opacity: 0.7;
-        animation: float-and-fade var(--duration) linear infinite;
-        pointer-events: none;
-    }
+            position: absolute;
+            font-size: 30px;
+            opacity: 0.7;
+            animation: float-and-fade var(--duration) linear infinite;
+            pointer-events: none;
+        }
 
         @keyframes float-and-fade {
-        0% {
-            transform: translateY(100vh) translateX(calc(var(--random-x) * 1vw));
-            opacity: 0.7;
+            0% {
+                transform: translateY(100vh) translateX(calc(var(--random-x) * 1vw));
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(-10vh) translateX(calc(var(--random-x) * 1vw));
+                opacity: 0;
+            }
         }
-        100% {
-            transform: translateY(-10vh) translateX(calc(var(--random-x) * 1vw));
-            opacity: 0;
-        }
-    }
-
 
         @keyframes pulse {
             0% { transform: scale(1); }
@@ -101,10 +100,15 @@
             color: #666;
             margin-top: 20px;
         }
+
+        ul {
+            list-style-type: disc;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
     </style>
 </head>
 <body>
-    
 
     <div class="profile-container">
         <img src="https://i.ibb.co/7WwNGMh/IMG-4579.jpg" alt="Addeen's Photo" class="profile-image">
@@ -119,10 +123,15 @@
         </div>
 
         <h3>🌿 About Me</h3>
-        <p>Passionate software developer transforming complex challenges into elegant solutions. I blend technology with creativity, crafting code that grows like a living ecosystem.</p>
+        <ul>
+            <li>Passionate software developer transforming complex challenges into elegant solutions.</li>
+            <li>Blending technology with creativity, crafting code that grows like a living ecosystem.</li>
+        </ul>
 
         <h3>🔑 Work 1 (Keyword) : <strong>Clearing</strong></h3>
-        <p>To learn more about the comparison between <strong>CISSP</strong>, <strong>NIST</strong>, <strong>ChatGPT</strong>, and <strong>Gemini</strong>, check out the details in <a href="keyword.html">Click me to WORK</a>.</p>
+        <ul>
+            <li>Learn about the comparison between <strong>CISSP</strong>, <strong>NIST</strong>, <strong>ChatGPT</strong>, and <strong>Gemini</strong> in more detail at <a href="keyword.html">Click me to WORK</a>.</li>
+        </ul>
 
         <h3>📬 Co-Worker</h3>
         <div class="social-links">
@@ -151,26 +160,26 @@
 
     <script>
         const studyEmojis = ['📚', '✏️', '🖊️', '📝', '🧠', '💻', '📖', '🔬', '📋', '🖥️'];
-    const container = document.getElementById('emojiContainer');
+        const container = document.getElementById('emojiContainer');
 
-    function createFloatingEmoji() {
-        const emoji = document.createElement('div');
-        emoji.classList.add('floating-emoji');
-        emoji.textContent = studyEmojis[Math.floor(Math.random() * studyEmojis.length)];
+        function createFloatingEmoji() {
+            const emoji = document.createElement('div');
+            emoji.classList.add('floating-emoji');
+            emoji.textContent = studyEmojis[Math.floor(Math.random() * studyEmojis.length)];
 
-        const randomX = Math.random() * 100;
-        const duration = 10 + Math.random() * 10;
+            const randomX = Math.random() * 100;
+            const duration = 10 + Math.random() * 10;
 
-        emoji.style.setProperty('--random-x', randomX);
-        emoji.style.setProperty('--duration', `${duration}s`);
+            emoji.style.setProperty('--random-x', randomX);
+            emoji.style.setProperty('--duration', `${duration}s`);
 
-        container.appendChild(emoji);
+            container.appendChild(emoji);
 
-        setTimeout(() => {
-            emoji.remove();
-        }, duration * 1000);
-    }
+            setTimeout(() => {
+                emoji.remove();
+            }, duration * 1000);
+        }
 
-    setInterval(createFloatingEmoji, 500);
+        setInterval(createFloatingEmoji, 500);
     </script>
 </body>
