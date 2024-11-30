@@ -7,7 +7,10 @@
 | The removal of sensitive data from storage devices in such a way that there is assurance that the data may not be reconstructed using normal system functions or software recovery utilities. | Clearing refers to the process of removing data from a storage device in such a way that the data can no longer be recovered by normal system functions or basic data recovery techniques, but the device is still usable. Clearing typically involves overwriting the data with non-sensitive information to ensure that the original data is not easily retrievable. | The removal of sensitive data from storage devices in a way that ensures it cannot be reconstructed using system functions or recovery software. This process guarantees that deleted data is irretrievable and unrecognizable. | The removal of data from storage devices by overwriting with non-sensitive information, making it impossible to retrieve the original data by any standard method or software.              |
 
 ---
-
+---
+**ความหมายด้วยตัวเอง**:
+> - การลบข้อมูลจากอุปกรณ์เก็บข้อมูลให้ไม่สามารถกู้คืนได้ด้วยเครื่องมือกู้ข้อมูลทั่วไป แม้ว่าจะไม่ได้ทำลายข้อมูลหรืออุปกรณ์อย่างถาวร ข้อมูลสามารถกู้คืนได้ด้วยเทคนิคพิเศษ แต่มันก็ยากมาก
+---
 ### ตัวอย่างการใช้งาน:
 
 #### 1. **CISSP Example:**
@@ -26,9 +29,6 @@
    - **สถานการณ์:** การลบข้อมูลทางการเงินจากเซิร์ฟเวอร์หลังจากการจบการทำธุรกรรมในระบบ.
    - **การใช้งาน:** การทำ **clearing** บนเซิร์ฟเวอร์โดยการเขียนข้อมูลใหม่ที่ไม่เกี่ยวข้องลงไปเพื่อป้องกันการกู้คืนข้อมูลที่มีความสำคัญ.
 
----
-**ความหมายด้วยตัวเอง**:
-> - การลบข้อมูลจากอุปกรณ์เก็บข้อมูลให้ไม่สามารถกู้คืนได้ด้วยเครื่องมือกู้ข้อมูลทั่วไป แม้ว่าจะไม่ได้ทำลายข้อมูลหรืออุปกรณ์อย่างถาวร ข้อมูลสามารถกู้คืนได้ด้วยเทคนิคพิเศษ แต่มันก็ยากมาก
 ---
 > **ภาพที่แสดงให้เห็นภาพการใช้งาน**:
 > - ในการใช้เครื่องมือ **clearing**, เช่น การใช้ซอฟต์แวร์ในการเขียนข้อมูลใหม่ลงไปบนฮาร์ดไดรฟ์ (เช่นการเขียนตัวเลขสุ่มหลายครั้ง), ข้อมูลเดิมจะไม่สามารถกู้คืนได้แม้จะใช้ซอฟต์แวร์การกู้คืนที่มีความสามารถสูง.
