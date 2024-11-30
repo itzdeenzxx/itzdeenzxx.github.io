@@ -136,7 +136,7 @@
             <a href="https://linkedin.com/in/addeen" target="_blank">
                 <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn">
             </a>
-            <a href="mailto:addeen.salaehsakul@gmail.com">
+            <a href="mailto:addeen.s@ku.th">
                 <img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail" alt="Email">
             </a>
         </div>
