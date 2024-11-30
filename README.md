@@ -12,8 +12,11 @@ Passionate software developer transforming complex challenges into elegant solut
 
 ---
 
-### 🔑 Key Concepts: **Clearing**
+### 🔑 Work 1 (Keyword) : **Clearing**
 To learn more about the comparison between **CISSP**, **NIST**, **ChatGPT**, and **Gemini**, check out the details in [keyword.md](keyword.md).
+
+### 📬 Co-Worker:  
+[![GitHub](https://img.shields.io/badge/GitHub-IsNName-green?style=for-the-badge&logo=github)](https://github.com/IsNName)
 
 ---
 
@@ -23,8 +26,6 @@ To learn more about the comparison between **CISSP**, **NIST**, **ChatGPT**, and
 
 ---
 
-### 📬 เพื่อนร่วมงาน:  
-[![GitHub](https://img.shields.io/badge/GitHub-IsNName-green?style=for-the-badge&logo=github)](https://github.com/IsNName)
 
 ---
 
