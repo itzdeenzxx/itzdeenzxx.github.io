@@ -126,7 +126,7 @@
 
         <h3>📬 Co-Worker</h3>
         <div class="social-links">
-            <a href="https://github.com/IsNName" target="_blank">
+            <a href="https://isnname.github.io" target="_blank">
                 <img src="https://img.shields.io/badge/GitHub-IsNName-green?style=for-the-badge&logo=github" alt="GitHub Co-Worker">
             </a>
         </div>
