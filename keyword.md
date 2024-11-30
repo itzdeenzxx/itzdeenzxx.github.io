@@ -1,132 +1,184 @@
-<style>
-:root {
-    --primary-blue: #2c3e50;
-    --background-gradient: linear-gradient(45deg, #e0f2fe, #bae6fd, #93c5fd);
-}
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definition of Clearing</title>
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+            background: linear-gradient(135deg, #f6f8f9 0%, #e5ebee 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background: var(--background-gradient);
-    color: var(--primary-blue);
-}
+        .profile-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
 
-h1, h2 {
-    color: var(--primary-blue);
-    border-bottom: 2px solid rgba(44, 62, 80, 0.2);
-    padding-bottom: 10px;
-}
+        h1, h2, h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
 
-th, td {
-    border: 1px solid #9ecaed;
-    padding: 12px;
-    text-align: left;
-}
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
 
-th {
-    background-color: #e6f2ff;
-    font-weight: bold;
-}
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
 
-tr:nth-child(even) {
-    background-color: #f0f8ff;
-}
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
 
-tr:hover {
-    background-color: #e6f2ff;
-    transition: background-color 0.3s ease;
-}
+        .quote {
+            font-style: italic;
+            color: #666;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
 
-code {
-    background-color: #f4f4f4;
-    padding: 2px 4px;
-    border-radius: 4px;
-}
+    <div class="profile-container">
+        <h1>Definition of Clearing</h1>
 
-.emoji {
-    margin-right: 10px;
-}
-</style>
+        <table>
+            <thead>
+                <tr>
+                    <th>Source</th>
+                    <th>Definition</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>CISSP</strong></td>
+                    <td>The removal of sensitive data from storage devices in such a way that there is assurance that the data may not be reconstructed using normal system functions or software recovery utilities.</td>
+                </tr>
+                <tr>
+                    <td><strong>NIST</strong></td>
+                    <td>Clearing refers to the process of removing data from a storage device in such a way that the data can no longer be recovered by normal system functions or basic data recovery techniques, but the device is still usable. Clearing typically involves overwriting the data with non-sensitive information to ensure that the original data is not easily retrievable.</td>
+                </tr>
+                <tr>
+                    <td><strong>ChatGPT (CISSP)</strong></td>
+                    <td>The removal of sensitive data from storage devices in a way that ensures the data cannot be reconstructed using normal system functions or standard data recovery software.</td>
+                </tr>
+                <tr>
+                    <td><strong>Gemini (CISSP)</strong></td>
+                    <td>The removal of sensitive data from storage devices in such a way that there is assurance that the data may not be reconstructed using normal system functions or software recovery utilities.</td>
+                </tr>
+                <tr>
+                    <td><strong>ChatGPT (NIST)</strong></td>
+                    <td>Clearing is the process of removing data from a storage device so that it cannot be recovered, while keeping the device usable. This is done by overwriting the data with non-sensitive information.</td>
+                </tr>
+                <tr>
+                    <td><strong>Gemini (NIST)</strong></td>
+                    <td>Clearing is a process that removes data from a storage device in a way that makes it unrecoverable by standard methods. However, the device remains functional. This is typically done by overwriting the data with non-sensitive information to prevent data recovery.</td>
+                </tr>
+            </tbody>
+        </table>
 
-# 📚 การ Clearing ข้อมูล: มุมมองจาก CISSP, NIST, และ AI 🔒
+        <h2>ตัวอย่างการใช้งาน 🔍</h2>
 
-## ความหมายของการ Clearing
+        <h3>1. ตัวอย่างจาก ChatGPT 📱</h3>
+        <p><strong>สถานการณ์:</strong> การลบข้อมูลส่วนตัวออกจากอุปกรณ์มือถือ</p>
+        <p><strong>การใช้งาน:</strong></p>
+        <ul>
+            <li>ใช้เครื่องมือเฉพาะสำหรับ Clearing</li>
+            <li>ลบข้อมูลทั้งหมดและเขียนทับด้วยข้อมูลสุ่ม</li>
+            <li>มั่นใจว่าข้อมูลเดิมไม่สามารถกู้คืนได้</li>
+        </ul>
 
-### ตารางเปรียบเทียบคำนิยาม
+        <h3>2. ตัวอย่างจาก Gemini 🔒</h3>
+        <p><strong>สถานการณ์:</strong> การจัดการข้อมูลทางการเงินในเซิร์ฟเวอร์</p>
+        <p><strong>การใช้งาน:</strong></p>
+        <ul>
+            <li>ดำเนินการ Clearing หลังการทำธุรกรรม</li>
+            <li>เขียนข้อมูลใหม่ทับลงไปเพื่อป้องกันการกู้คืน</li>
+            <li>ตรวจสอบความปลอดภัยของข้อมูล</li>
+        </ul>
 
-## Definition of Clearing
+        <h2>หลักการสำคัญของการ Clearing 🛡️</h2>
+        <ul>
+            <li><strong>การลบข้อมูลอย่างสมบูรณ์:</strong> ไม่ให้มีร่องรอยของข้อมูลเดิม ป้องกันการกู้คืนข้อมูลโดยไม่ได้รับอนุญาต</li>
+            <li><strong>การรักษาสภาพอุปกรณ์:</strong> คงความสามารถในการใช้งานของอุปกรณ์ สามารถนำอุปกรณ์ไปใช้ใหม่หรือขายต่อได้</li>
+            <li><strong>การเขียนทับอย่างเป็นระบบ:</strong> ใช้รูปแบบข้อมูลที่ไม่มีความสำคัญ ทำให้การกู้คืนข้อมูลเป็นไปได้ยากที่สุด</li>
+        </ul>
 
-| Source          | Definition                                                                                                                                                                                                                                         |
-|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CISSP**       | The removal of sensitive data from storage devices in such a way that there is assurance that the data may not be reconstructed using normal system functions or software recovery utilities.                                                       |
-| **NIST**        | Clearing refers to the process of removing data from a storage device in such a way that the data can no longer be recovered by normal system functions or basic data recovery techniques, but the device is still usable. Clearing typically involves overwriting the data with non-sensitive information to ensure that the original data is not easily retrievable. |
-| **ChatGPT (CISSP)** | The removal of sensitive data from storage devices in a way that ensures the data cannot be reconstructed using normal system functions or standard data recovery software.                                                                        |
-| **Gemini (CISSP)** | The removal of sensitive data from storage devices in such a way that there is assurance that the data may not be reconstructed using normal system functions or software recovery utilities.                                                      |
-| **ChatGPT (NIST)**  | Clearing is the process of removing data from a storage device so that it cannot be recovered, while keeping the device usable. This is done by overwriting the data with non-sensitive information.                                              |
-| **Gemini (NIST)**   | Clearing is a process that removes data from a storage device in a way that makes it unrecoverable by standard methods. However, the device remains functional. This is typically done by overwriting the data with non-sensitive information to prevent data recovery. |
+        <h2>ข้อควรระวังและคำแนะนำ ⚠️</h2>
+        <ul>
+            <li>ใช้ซอฟต์แวร์ Clearing ที่ได้รับการรับรอง</li>
+            <li>ดำเนินการเขียนทับหลายรอบ</li>
+            <li>ตรวจสอบการลบข้อมูลอย่างละเอียด</li>
+            <li>บันทึกการดำเนินการ Clearing</li>
+            <li>พิจารณาการ Clearing ระดับฮาร์ดแวร์สำหรับความปลอดภัยสูงสุด</li>
+        </ul>
 
+        <h2>การเปรียบเทียบวิธีการลบข้อมูล 📊</h2>
 
-## ตัวอย่างการใช้งาน 🔍
+        <table>
+            <thead>
+                <tr>
+                    <th>วิธีการ</th>
+                    <th>ขอบเขต</th>
+                    <th>โอกาสกู้คืน</th>
+                    <th>สถานะอุปกรณ์</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Clearing</strong></td>
+                    <td>การลบข้อมูลเชิงตรรกะ</td>
+                    <td>ต่ำ</td>
+                    <td>ใช้งานได้</td>
+                </tr>
+                <tr>
+                    <td><strong>Erasure</strong></td>
+                    <td>การลบข้อมูลอย่างครอบคลุม</td>
+                    <td>น้อยมาก</td>
+                    <td>ใช้งานได้</td>
+                </tr>
+                <tr>
+                    <td><strong>Physical Destruction</strong></td>
+                    <td>การทำลายทางกายภาพ</td>
+                    <td>ไม่สามารถกู้คืน</td>
+                    <td>ถูกทำลาย</td>
+                </tr>
+            </tbody>
+        </table>
 
+        <h2>บทสรุป 🏁</h2>
+        <p>การ Clearing เป็นกระบวนการที่สำคัญในการปกป้องข้อมูลที่ละเอียดอ่อน การเลือกวิธีที่เหมาะสมขึ้นอยู่กับบริบทและความต้องการด้านความปลอดภัย</p>
+    </div>
 
-### 1. ตัวอย่างจาก ChatGPT 📱
-
-**สถานการณ์:** การลบข้อมูลส่วนตัวออกจากอุปกรณ์มือถือ
-
-**การใช้งาน:**
-- ใช้เครื่องมือเฉพาะสำหรับ Clearing
-- ลบข้อมูลทั้งหมดและเขียนทับด้วยข้อมูลสุ่ม
-- มั่นใจว่าข้อมูลเดิมไม่สามารถกู้คืนได้
-
-### 2. ตัวอย่างจาก Gemini 🔒
-
-**สถานการณ์:** การจัดการข้อมูลทางการเงินในเซิร์ฟเวอร์
-
-**การใช้งาน:**
-- ดำเนินการ Clearing หลังการทำธุรกรรม
-- เขียนข้อมูลใหม่ทับลงไปเพื่อป้องกันการกู้คืน
-- ตรวจสอบความปลอดภัยของข้อมูล
-
-## หลักการสำคัญของการ Clearing 🛡️
-
-1. **การลบข้อมูลอย่างสมบูรณ์**
-   - ไม่ให้มีร่องรอยของข้อมูลเดิม
-   - ป้องกันการกู้คืนข้อมูลโดยไม่ได้รับอนุญาต
-
-2. **การรักษาสภาพอุปกรณ์**
-   - คงความสามารถในการใช้งานของอุปกรณ์
-   - สามารถนำอุปกรณ์ไปใช้ใหม่หรือขายต่อได้
-
-3. **การเขียนทับอย่างเป็นระบบ**
-   - ใช้รูปแบบข้อมูลที่ไม่มีความสำคัญ
-   - ทำให้การกู้คืนข้อมูลเป็นไปได้ยากที่สุด
-
-## ข้อควรระวังและคำแนะนำ ⚠️
-
-- ใช้ซอฟต์แวร์ Clearing ที่ได้รับการรับรอง
-- ดำเนินการเขียนทับหลายรอบ
-- ตรวจสอบการลบข้อมูลอย่างละเอียด
-- บันทึกการดำเนินการ Clearing
-- พิจารณาการ Clearing ระดับฮาร์ดแวร์สำหรับความปลอดภัยสูงสุด
-
-## การเปรียบเทียบวิธีการลบข้อมูล 📊
-
-| วิธีการ | ขอบเขต | โอกาสกู้คืน | สถานะอุปกรณ์ |
-|:------:|:-------:|:----------:|:-------------:|
-| **Clearing** | การลบข้อมูลเชิงตรรกะ | ต่ำ | ใช้งานได้ |
-| **Erasure** | การลบข้อมูลอย่างครอบคลุม | น้อยมาก | ใช้งานได้ |
-| **Physical Destruction** | การทำลายทางกายภาพ | ไม่สามารถกู้คืน | ถูกทำลาย |
-
-## บทสรุป 🏁
-
-การ Clearing เป็นกระบวนการที่สำคัญในการปกป้องข้อมูลที่ละเอียดอ่อน การเลือกวิธีที่เหมาะสมขึ้นอยู่กับบริบทและความต้องการด้านความปลอดภัย
+</body>
+</html>
