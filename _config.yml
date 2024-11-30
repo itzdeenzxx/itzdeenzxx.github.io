@@ -1,4 +1,4 @@
-remote_theme: pages-themes/minimal@v0.2.0
+remote_theme: jekyll-theme-cayman
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
@@ -6,4 +6,3 @@ plugins:
 title: Addeen Salaehsakul
 description: Software Developer | Nature-Inspired Technologist
 show_downloads: false
-
