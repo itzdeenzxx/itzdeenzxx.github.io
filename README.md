@@ -1,32 +1,31 @@
-# Addeen Salaehsakul
+# Addeen Salaehsakul 
 
-## Software Developer | Nature-Inspired Technologist
+## 💻 Software Developer | Nature-Inspired Technologist
 
-![Forest Technology Banner](/api/placeholder/1200/300)
+![GitHub Followers](https://img.shields.io/github/followers/addeen?style=social)
+![Profile Views](https://komarev.com/ghpvc/?username=addeen&color=green)
 
 ### 🌿 About Me
-A passionate software developer driven by the intersection of technology and nature. I craft code that grows like a living ecosystem, transforming complex challenges into elegant solutions.
+Passionate software developer transforming complex challenges into elegant solutions. I blend technology with creativity, crafting code that grows like a living ecosystem.
 
-### 💻 Technical Skills
-- Web Development
-- Full Stack Engineering
-- Creative Problem Solving
-- UI/UX Design
-- Cloud Technologies
+### 🚀 Technologies & Skills
+![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python)
+![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)
+![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react)
+![Node.js](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js)
 
-### 📫 Connect With Me
-- **Email**: addeen.salaehsakul@gmail.com
-- **GitHub**: [github.com/addeen](https://github.com/addeen)
-- **LinkedIn**: [linkedin.com/in/addeen](https://linkedin.com/in/addeen)
+### 📦 Featured Projects
+- **EcoTrack**: Environmental monitoring platform
+- **NatureBridge**: Ecological data connector
+- **Digital Forest**: Interactive visualization tool
+
+### 🌱 Connect With Me
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/addeen)
+[![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:addeen.salaehsakul@gmail.com)
 
 ---
 
-> "Technology is the seed, nature is the wisdom. Plant your code with intention." - Addeen Salaehsakul
+> "In the forest of code, every line is a seed of potential." - Addeen Salaehsakul
 
-```javascript
-const professionalPhilosophy = {
-  mission: 'Create technology that respects and mimics natural systems',
-  vision: 'Bridge digital innovation with ecological consciousness',
-  values: ['Sustainability', 'Creativity', 'Continuous Learning']
-};
-```
+### 📊 GitHub Stats
+![Addeen's GitHub Stats](https://github-readme-stats.vercel.app/api?username=addeen&show_icons=true&theme=radical)
