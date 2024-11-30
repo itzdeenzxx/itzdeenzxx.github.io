@@ -13,7 +13,7 @@ Passionate software developer transforming complex challenges into elegant solut
 ---
 
 ### 🔑 Key Concepts: **Clearing**
-To learn more about the comparison between **CISSP** and **NIST**, check out the details in [keyword.md](keyword.md).
+To learn more about the comparison between **CISSP**, **NIST**, **ChatGPT**, and **Gemini**, check out the details in [keyword.md](keyword.md).
 
 ---
 
