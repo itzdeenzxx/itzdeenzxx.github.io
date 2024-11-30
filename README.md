@@ -104,7 +104,7 @@
     </style>
 </head>
 <body>
-    <div class="emoji-container" id="emojiContainer"></div>
+    
 
     <div class="profile-container">
         <img src="https://i.ibb.co/7WwNGMh/IMG-4579.jpg" alt="Addeen's Photo" class="profile-image">
@@ -147,6 +147,7 @@
             <img src="https://github-readme-stats.vercel.app/api?username=addeen&show_icons=true&theme=radical" alt="Addeen's GitHub Stats">
         </div>
     </div>
+    <div class="emoji-container" id="emojiContainer"></div>
 
     <script>
         const studyEmojis = ['📚', '✏️', '🖊️', '📝', '🧠', '💻', '📖', '🔬', '📋', '🖥️'];
