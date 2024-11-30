@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="th">
 <head>
     <meta charset="UTF-8">
     <title>Addeen Salaehsakul - Profile</title>
@@ -41,22 +39,24 @@
         }
 
         .floating-emoji {
-            position: absolute;
-            font-size: 30px;
-            opacity: 0.7;
-            animation: float-and-fade 15s linear infinite;
-        }
+        position: absolute;
+        font-size: 30px;
+        opacity: 0.7;
+        animation: float-and-fade var(--duration) linear infinite;
+        pointer-events: none;
+    }
 
         @keyframes float-and-fade {
-            0% {
-                transform: translateY(100vh) translateX(calc(random(100) * 1vw)) rotate(0deg);
-                opacity: 0.7;
-            }
-            100% {
-                transform: translateY(-10vh) translateX(calc(random(100) * 1vw)) rotate(360deg);
-                opacity: 0;
-            }
+        0% {
+            transform: translateY(100vh) translateX(calc(var(--random-x) * 1vw));
+            opacity: 0.7;
         }
+        100% {
+            transform: translateY(-10vh) translateX(calc(var(--random-x) * 1vw));
+            opacity: 0;
+        }
+    }
+
 
         @keyframes pulse {
             0% { transform: scale(1); }
@@ -151,26 +151,26 @@
 
     <script>
         const studyEmojis = ['📚', '✏️', '🖊️', '📝', '🧠', '💻', '📖', '🔬', '📋', '🖥️'];
-        const container = document.getElementById('emojiContainer');
+    const container = document.getElementById('emojiContainer');
 
-        function createFloatingEmoji() {
-            const emoji = document.createElement('div');
-            emoji.classList.add('floating-emoji');
-            emoji.textContent = studyEmojis[Math.floor(Math.random() * studyEmojis.length)];
-            
-            emoji.style.left = `${Math.random() * 100}%`;
-            emoji.style.animationDuration = `${10 + Math.random() * 10}s`;
-            
-            container.appendChild(emoji);
+    function createFloatingEmoji() {
+        const emoji = document.createElement('div');
+        emoji.classList.add('floating-emoji');
+        emoji.textContent = studyEmojis[Math.floor(Math.random() * studyEmojis.length)];
 
-            // Remove emoji after animation
-            setTimeout(() => {
-                container.removeChild(emoji);
-            }, 15000);
-        }
+        const randomX = Math.random() * 100;
+        const duration = 10 + Math.random() * 10;
 
-        // Create emojis periodically
-        setInterval(createFloatingEmoji, 500);
+        emoji.style.setProperty('--random-x', randomX);
+        emoji.style.setProperty('--duration', `${duration}s`);
+
+        container.appendChild(emoji);
+
+        setTimeout(() => {
+            emoji.remove();
+        }, duration * 1000);
+    }
+
+    setInterval(createFloatingEmoji, 500);
     </script>
 </body>
-</html>
