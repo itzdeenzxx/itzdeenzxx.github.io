@@ -122,7 +122,7 @@
         <p>Passionate software developer transforming complex challenges into elegant solutions. I blend technology with creativity, crafting code that grows like a living ecosystem.</p>
 
         <h3>🔑 Work 1 (Keyword) : <strong>Clearing</strong></h3>
-        <p>To learn more about the comparison between <strong>CISSP</strong>, <strong>NIST</strong>, <strong>ChatGPT</strong>, and <strong>Gemini</strong>, check out the details in <a href="keyword.md">keyword.md</a>.</p>
+        <p>To learn more about the comparison between <strong>CISSP</strong>, <strong>NIST</strong>, <strong>ChatGPT</strong>, and <strong>Gemini</strong>, check out the details in <a href="keyword.html">Click me to WORK</a>.</p>
 
         <h3>📬 Co-Worker</h3>
         <div class="social-links">
