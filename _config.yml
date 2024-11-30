@@ -1,9 +1,9 @@
 # _config.yml
 
 # Site settings
-title: Clearing: Secure Data Removal
-description: A guide to secure data removal techniques and best practices.
-author: Your Name
+title: "Clearing: Secure Data Removal"
+description: "A guide to secure data removal techniques and best practices."
+author: "Your Name"
 baseurl: "" # Leave empty if deploying to root, e.g., https://username.github.io/
 url: "https://itzdeenzxx.github.io" # Replace with your GitHub Pages URL
 
@@ -21,7 +21,3 @@ exclude:
   - keyword.md
   - Gemfile
   - Gemfile.lock
-
-# Enable Google Analytics (optional)
-google_analytics: UA-XXXXXX-X # Replace with your Google Analytics tracking ID
-
