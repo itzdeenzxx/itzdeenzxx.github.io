@@ -1,163 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Clearing: Secure Data Removal Technique">
-  <title>Clearing: Secure Data Removal</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 20px auto;
-      max-width: 800px;
-      padding: 0 10px;
-    }
-    h1, h2, h3 {
-      color: #2c3e50;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
-    }
-    table th, table td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      text-align: left;
-    }
-    table th {
-      background-color: #f4f4f4;
-    }
-    ul {
-      margin: 10px 0 10px 20px;
-    }
-    .code-block {
-      background: #f9f9f9;
-      border-left: 4px solid #2c3e50;
-      padding: 10px;
-      font-family: monospace;
-      overflow-x: auto;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>🔐 Clearing: Secure Data Removal Technique</h1>
-  </header>
+# 🔐 Clearing: Secure Data Removal Technique
 
-  <section>
-    <h2>📘 Definitions from References</h2>
-    <table>
-      <tr>
-        <th>Source</th>
-        <th>Definition</th>
-      </tr>
-      <tr>
-        <td>CISSP</td>
-        <td>The removal of sensitive data from storage devices in such a way that there is assurance that the data may not be reconstructed using normal system functions or software recovery utilities.</td>
-      </tr>
-      <tr>
-        <td>NIST</td>
-        <td>Clearing refers to the process of removing data from a storage device in such a way that the data can no longer be recovered by normal system functions or basic data recovery techniques, but the device is still usable.</td>
-      </tr>
-      <tr>
-        <td>ChatGPT (CISSP)</td>
-        <td>การลบข้อมูลที่มีความสำคัญจากอุปกรณ์จัดเก็บข้อมูลในลักษณะที่มั่นใจได้ว่าข้อมูลดังกล่าวจะไม่สามารถกู้คืนได้โดยใช้ฟังก์ชันปกติของระบบหรือซอฟต์แวร์กู้คืนข้อมูลมาตรฐาน</td>
-      </tr>
-      <tr>
-        <td>Gemini (CISSP)</td>
-        <td>การลบข้อมูลสำคัญจากอุปกรณ์จัดเก็บข้อมูลโดยมั่นใจได้ว่าข้อมูลนั้นจะไม่สามารถถูกกู้คืนได้ด้วยฟังก์ชันปกติของระบบหรือเครื่องมือกู้ข้อมูลทั่วไป</td>
-      </tr>
-      <tr>
-        <td>ChatGPT (NIST)</td>
-        <td>การล้างข้อมูลคือกระบวนการลบข้อมูลออกจากอุปกรณ์จัดเก็บข้อมูลเพื่อไม่ให้สามารถกู้คืนได้ แต่ยังคงสามารถใช้อุปกรณ์ได้ โดยการลบข้อมูลนั้นจะถูกแทนที่ด้วยข้อมูลที่ไม่สำคัญ</td>
-      </tr>
-      <tr>
-        <td>Gemini (NIST)</td>
-        <td>การล้างข้อมูลเป็นกระบวนการลบข้อมูลออกจากอุปกรณ์จัดเก็บในลักษณะที่ไม่สามารถกู้คืนได้ด้วยวิธีปกติ แต่อุปกรณ์ยังสามารถใช้งานได้ โดยมักใช้วิธีการเขียนทับข้อมูลเดิมด้วยข้อมูลที่ไม่มีความสำคัญ</td>
-      </tr>
-    </table>
-  </section>
+## 📘 Definitions from References
 
-  <section>
-    <h2>✍️ Self-Interpretation</h2>
-    <p>
-      <strong>Clearing</strong> is the process of securely removing data from storage devices to ensure it cannot be recovered while keeping the device functional. This process is critical for protecting sensitive data and preventing unauthorized use of the data after the device is sold or discarded.
-    </p>
-  </section>
+| Source          | Definition |
+|-----------------|------------|
+| CISSP           | The removal of sensitive data from storage devices in such a way that there is assurance that the data may not be reconstructed using normal system functions or software recovery utilities. |
+| NIST            | Clearing refers to the process of removing data from a storage device in such a way that the data can no longer be recovered by normal system functions or basic data recovery techniques, but the device is still usable. |
+| ChatGPT (CISSP) | การลบข้อมูลที่มีความสำคัญจากอุปกรณ์จัดเก็บข้อมูลในลักษณะที่มั่นใจได้ว่าข้อมูลดังกล่าวจะไม่สามารถกู้คืนได้โดยใช้ฟังก์ชันปกติของระบบหรือซอฟต์แวร์กู้คืนข้อมูลมาตรฐาน |
+| Gemini (CISSP)  | การลบข้อมูลสำคัญจากอุปกรณ์จัดเก็บข้อมูลโดยมั่นใจได้ว่าข้อมูลนั้นจะไม่สามารถถูกกู้คืนได้ด้วยฟังก์ชันปกติของระบบหรือเครื่องมือกู้ข้อมูลทั่วไป |
+| ChatGPT (NIST)  | การล้างข้อมูลคือกระบวนการลบข้อมูลออกจากอุปกรณ์จัดเก็บข้อมูลเพื่อไม่ให้สามารถกู้คืนได้ แต่ยังคงสามารถใช้อุปกรณ์ได้ โดยการลบข้อมูลนั้นจะถูกแทนที่ด้วยข้อมูลที่ไม่สำคัญ |
+| Gemini (NIST)   | การล้างข้อมูลเป็นกระบวนการลบข้อมูลออกจากอุปกรณ์จัดเก็บในลักษณะที่ไม่สามารถกู้คืนได้ด้วยวิธีปกติ แต่อุปกรณ์ยังสามารถใช้งานได้ โดยมักใช้วิธีการเขียนทับข้อมูลเดิมด้วยข้อมูลที่ไม่มีความสำคัญ |
 
-  <section>
-    <h2>🎯 Key Understandings</h2>
-    <ul>
-      <li><strong>Complete Data Removal</strong>: Ensures sensitive data is irrecoverable and prevents misuse of deleted data.</li>
-      <li><strong>Preserves Device Functionality</strong>: Keeps the device usable for resale or reuse.</li>
-      <li><strong>Overwriting Techniques</strong>: Overwrites data with random or non-sensitive information.</li>
-    </ul>
-  </section>
+---
 
-  <section>
-    <h2>🚀 Use Cases</h2>
-    <h3>📱 Clearing Data from Smartphones</h3>
-    <ul>
-      <li>Use certified software tools.</li>
-      <li>Overwrite existing data with random data.</li>
-      <li>Verify the completeness of the data removal.</li>
-    </ul>
-    <h3>🖥️ Clearing Data from Servers</h3>
-    <ul>
-      <li>Perform Clearing after decommissioning servers.</li>
-      <li>Use specialized tools designed for enterprise-level data removal.</li>
-      <li>Verify security and log the data removal process.</li>
-    </ul>
-  </section>
+## ✍️ Self-Interpretation
 
-  <section>
-    <h2>⚠️ Precautions</h2>
-    <ul>
-      <li>🔑 Use certified software tools.</li>
-      <li>🔄 Perform multiple overwrite cycles for added security.</li>
-      <li>🔍 Verify data removal thoroughly.</li>
-      <li>📝 Log the data removal process for future reference.</li>
-    </ul>
-  </section>
+**Clearing** is the process of securely removing data from storage devices to ensure it cannot be recovered while keeping the device functional. This process is critical for protecting sensitive data and preventing unauthorized use of the data after the device is sold or discarded.
 
-  <section>
-    <h2>📊 Comparison of Data Removal Methods</h2>
-    <table>
-      <tr>
-        <th>Method</th>
-        <th>Scope of Data Removal</th>
-        <th>Recovery Likelihood</th>
-        <th>Device Status</th>
-      </tr>
-      <tr>
-        <td>Clearing</td>
-        <td>Logical data removal</td>
-        <td>Low</td>
-        <td>Usable</td>
-      </tr>
-      <tr>
-        <td>Erasure</td>
-        <td>Comprehensive removal</td>
-        <td>Very low</td>
-        <td>Usable</td>
-      </tr>
-      <tr>
-        <td>Physical Destruction</td>
-        <td>Physical destruction</td>
-        <td>None</td>
-        <td>Destroyed</td>
-      </tr>
-    </table>
-  </section>
+---
 
-  <section>
-    <h2>🏁 Conclusion</h2>
-    <p>
-      <strong>Clearing</strong> is an essential process for protecting sensitive data. Choosing the appropriate method depends on the security requirements and the context in which the data and devices are used.
-    </p>
-  </section>
-  <a href="https://isnname.github.io/clearing.html">Co-Worker - Keyword Work</a>
-</body>
-</html>
+## 💯 Key Understandings
+
+- **Complete Data Removal**: Ensures sensitive data is irrecoverable and prevents misuse of deleted data.
+- **Preserves Device Functionality**: Keeps the device usable for resale or reuse.
+- **Overwriting Techniques**: Overwrites data with random or non-sensitive information.
+
+---
+
+## 🚀 Use Cases
+
+### 📱 Clearing Data from Smartphones
+
+- Use certified software tools.
+- Overwrite existing data with random data.
+- Verify the completeness of the data removal.
+
+### 🖥️ Clearing Data from Servers
+
+- Perform Clearing after decommissioning servers.
+- Use specialized tools designed for enterprise-level data removal.
+- Verify security and log the data removal process.
+
+---
+
+## ⚠️ Precautions
+
+- 🔑 Use certified software tools.
+- 🔄 Perform multiple overwrite cycles for added security.
+- 🔍 Verify data removal thoroughly.
+- 📝 Log the data removal process for future reference.
+
+---
+
+## 📊 Comparison of Data Removal Methods
+
+| Method              | Scope of Data Removal  | Recovery Likelihood | Device Status |
+|---------------------|------------------------|---------------------|---------------|
+| Clearing            | Logical data removal   | Low                 | Usable        |
+| Erasure             | Comprehensive removal  | Very low            | Usable        |
+| Physical Destruction| Physical destruction   | None                | Destroyed     |
+
+---
+
+## 🏁 Conclusion
+
+**Clearing** is an essential process for protecting sensitive data. Choosing the appropriate method depends on the security requirements and the context in which the data and devices are used.
+
+[Co-Worker - Keyword Work](https://isnname.github.io/clearing.html)
+
