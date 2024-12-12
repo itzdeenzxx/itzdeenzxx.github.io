@@ -16,7 +16,7 @@
 ---
 
 ### 🔑 Work 1 (Keyword): **Clearing**
-- Learn about the comparison between **CISSP**, **NIST**, **ChatGPT**, and **Gemini** in more detail at [Click me to WORK](keyword.md).
+- Learn about the comparison between **CISSP**, **NIST**, **ChatGPT**, and **Gemini** in more detail at [Click me to WORK](Clearing.md).
 
 ---
 
