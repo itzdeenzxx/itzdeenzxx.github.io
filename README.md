@@ -12,7 +12,7 @@
 - Learn about the comparison between **CISSP**, **NIST**, **ChatGPT**, and **Gemini** in more detail at [Click me to WORK](Clearing.md).
 ---
 ### 🎄 Work 2 (Keyword): **Christmas E-card with Hidden Messages**
-- Experience the magic of winter wonderland in my interactive Christmas E-card at [View Christmas Card](Ecard_cristmas.md).
+- Experience the magic of winter wonderland in my interactive Christmas E-card at [View Christmas Card](Ecard2.html).
 - Features include:
   - Enchanting winter night theme with beautiful snowfall animation
   - Northern lights effect and interactive elements
