@@ -1,1 +1,229 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magical Christmas Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(180deg, #0B0B3B 0%, #1a1a4a 50%, #2A2A5A 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            position: relative;
+            overflow: hidden;
+        }
 
+        /* Northern Lights Effect */
+        .aurora {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.5;
+            background: 
+                linear-gradient(90deg, 
+                    transparent 0%, 
+                    rgba(51, 255, 187, 0.2) 25%,
+                    rgba(51, 255, 187, 0.3) 50%,
+                    rgba(51, 255, 187, 0.2) 75%,
+                    transparent 100%);
+            filter: blur(40px);
+            animation: auroraLight 8s infinite;
+        }
+
+        @keyframes auroraLight {
+            0%, 100% { transform: translateY(-50%) translateX(-25%) rotate(-10deg); }
+            50% { transform: translateY(-60%) translateX(25%) rotate(10deg); }
+        }
+
+        /* Enhanced Snow Effect */
+        .snow, .snow:before, .snow:after {
+            position: fixed;
+            top: -650px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(4px 4px at 100px 50px, #fff, transparent),
+                radial-gradient(6px 6px at 200px 150px, #fff, transparent),
+                radial-gradient(3px 3px at 300px 250px, #fff, transparent),
+                radial-gradient(4px 4px at 400px 350px, #fff, transparent),
+                radial-gradient(6px 6px at 500px 100px, #fff, transparent),
+                radial-gradient(3px 3px at 50px 200px, #fff, transparent),
+                radial-gradient(4px 4px at 150px 300px, #fff, transparent),
+                radial-gradient(6px 6px at 250px 400px, #fff, transparent),
+                radial-gradient(3px 3px at 350px 500px, #fff, transparent);
+            background-size: 650px 650px;
+            animation: snow 3s linear infinite;
+            content: "";
+        }
+
+        .snow:after {
+            margin-left: -250px;
+            opacity: 0.5;
+            animation-duration: 6s;
+            animation-direction: reverse;
+            filter: blur(3px);
+        }
+
+        .snow:before {
+            margin-left: 250px;
+            opacity: 0.7;
+            animation-duration: 9s;
+            filter: blur(2px);
+        }
+
+        @keyframes snow {
+            to { transform: translateY(650px); }
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 3rem;
+            border-radius: 30px;
+            box-shadow: 
+                0 0 40px rgba(51, 255, 187, 0.2),
+                inset 0 0 20px rgba(255, 255, 255, 0.1);
+            text-align: center;
+            max-width: 90%;
+            width: 700px;
+            transform-style: preserve-3d;
+            animation: containerFloat 6s ease-in-out infinite;
+        }
+
+        @keyframes containerFloat {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(1deg); }
+        }
+
+        .image-container {
+            margin: 2rem 0;
+            position: relative;
+            perspective: 1000px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 
+                0 10px 30px rgba(0, 0, 0, 0.3),
+                0 0 20px rgba(51, 255, 187, 0.3);
+            transition: transform 0.5s;
+            transform: rotateX(5deg);
+        }
+
+        img:hover {
+            transform: rotateX(0deg) scale(1.02);
+        }
+
+        .download-btn {
+            background: linear-gradient(45deg, #ff4b1f, #ff9068);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 2rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(255, 75, 31, 0.4);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(255, 75, 31, 0.6);
+        }
+
+        .download-btn::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                transparent,
+                rgba(255, 255, 255, 0.3),
+                transparent
+            );
+            transform: rotate(45deg);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) rotate(45deg); }
+        }
+
+        .decorations {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .santa {
+            position: absolute;
+            top: -40px;
+            right: -20px;
+            font-size: 4rem;
+            animation: santaWave 3s ease-in-out infinite;
+            transform-origin: bottom center;
+        }
+
+        @keyframes santaWave {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(15deg); }
+        }
+
+        .stars {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: white;
+            box-shadow: 
+                100px 50px 2px #fff,
+                200px 100px 2px #fff,
+                300px 150px 2px #fff,
+                400px 200px 2px #fff,
+                50px 200px 2px #fff,
+                150px 300px 2px #fff,
+                250px 400px 2px #fff;
+            animation: twinkle 1s infinite;
+        }
+
+        @keyframes twinkle {
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <div class="aurora"></div>
+    <div class="snow"></div>
+    <div class="stars"></div>
+    <div class="container">
+        <div class="santa">🎅</div>
+        <div class="image-container">
+            <div class="decorations"></div>
+            <img src="image/fanal-addeen-hiden.png" alt="Fanal Addeen Hiden">
+        </div>
+        <a href="image/fanal-addeen-hiden.png" download class="download-btn">
+            ✨ ดาวน์โหลดภาพวิเศษ 🎄
+        </a>
+    </div>
+</body>
+</html>
