@@ -23,7 +23,7 @@ In the heart of winter's embrace, where snowflakes dance and stars twinkle, this
 
 ## 🎁 Download This Magical Memory
 
-[⭐ Download Full Resolution Image ⭐](image/Adden_ecard-2.png)
+[⭐ Download Full Resolution Image ⭐](image/Addeen_ecard-2.png)
 
 ---
 
