@@ -11,7 +11,7 @@
 
 ## 🎅 A Special Christmas Collection 🎄
 
-![Fanal Addeen Hiden](image/Addeen_ecard-2.png)
+![Fanal Addeen Hiden](image/Addeen_ecard-3.png)
 
 *Captured in the enchanting winter night, where dreams come alive*
 
@@ -23,7 +23,7 @@ In the heart of winter's embrace, where snowflakes dance and stars twinkle, this
 
 ## 🎁 Download This Magical Memory
 
-[⭐ Download Full Resolution Image ⭐](image/Addeen_ecard-2.png)
+[⭐ Download Full Resolution Image ⭐](image/Addeen_ecard-3.png)
 
 ---
 
