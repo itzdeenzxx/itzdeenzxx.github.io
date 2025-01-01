@@ -3,8 +3,8 @@
 ![Addeen's Photo](image/person1.jpeg)
 
 ## 💻 "อย่ากลัวความล้มเหลว เพราะตอนเดินสะดุด เราได้ขาข้างหนึ่งก้าวไปข้างหน้าแล้ว!"
-![GitHub Followers](https://img.shields.io/github/followers/addeen?style=social)  
-![Profile Views](https://komarev.com/ghpvc/?username=addeen&color=green)
+![GitHub Followers](https://img.shields.io/github/followers/itzdeenzxx?style=social)  
+![Profile Views](https://komarev.com/ghpvc/?username=itzdeenzxx&color=green)
 
 ---
 
@@ -32,6 +32,15 @@ Features include:
   - Secure message encoding using steganography techniques
   - Perfect blend of holiday cheer and cryptographic art
 - Downloadable special moments with secret messages
+
+---
+
+### 📊 Work 3: Data Quality (Accuracy)
+**คุณภาพของข้อมูล: ความถูกต้อง (Accuracy)**  
+
+The accuracy of data refers to the degree to which data reflects real-world facts, free from errors during recording, transfer, or processing. Accurate data ensures reliable decision-making and maintains long-term quality.  
+
+🔗 Learn more: [ความถูกต้อง (Accuracy)](accuracy.md)
 
 ---
 
