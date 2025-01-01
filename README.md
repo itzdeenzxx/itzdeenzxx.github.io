@@ -32,7 +32,7 @@
 [![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:addeen.s@ku.th)
 ---
 ### 📊 GitHub Stats
-![Addeen's GitHub Stats](https://github-readme-stats.vercel.app/api?username=addeen&show_icons=true&theme=radical)
+![Addeen's GitHub Stats](https://github-readme-stats.vercel.app/api?username=itzdeenzxx&show_icons=true&theme=radical)
 ---
 ### 🌟 Quote
 > "In the forest of code, every line is a seed of potential." - Addeen Salaehsakul
