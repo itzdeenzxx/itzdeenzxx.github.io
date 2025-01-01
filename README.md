@@ -8,8 +8,10 @@
 - Passionate software developer transforming complex challenges into elegant solutions.
 - Blending technology with creativity, crafting code that grows like a living ecosystem.
 ---
+---
 ### 🔑 Work 1 : **Clearing (Keyword)**
 - Learn about the comparison between **CISSP**, **NIST**, **ChatGPT**, and **Gemini** in more detail at [Click me to WORK](Clearing.md).
+---
 ---
 ### 🎄 Work 2 : **Christmas E-card with Hidden Messages**
 - Experience the magic of winter wonderland in my interactive Christmas E-card at [View Christmas Card (.html file)](Ecard2.html),
@@ -22,6 +24,7 @@
     - Secure message encoding using steganography techniques
     - Perfect blend of holiday cheer and cryptographic art
   - Downloadable special moments with secret messages
+---
 ---
 
 ### 🌱 Connect With Me
