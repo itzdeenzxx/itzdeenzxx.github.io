@@ -23,9 +23,7 @@
     - Perfect blend of holiday cheer and cryptographic art
   - Downloadable special moments with secret messages
 ---
-### 📬 Co-Worker
-[![GitHub Co-Worker](https://img.shields.io/badge/GitHub-IsNName-green?style=for-the-badge&logo=github)](https://isnname.github.io)
----
+
 ### 🌱 Connect With Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/addeen)  
 [![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:addeen.s@ku.th)
