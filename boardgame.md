@@ -176,12 +176,12 @@
 
      <div class="content-container" style="position: relative;">
          <h1>🛡️ Cyber Security Board Game: การผจญภัยแห่งความปลอดภัยไซเบอร์ 🌐</h1>
-        
+        <br>
         <div class="typing-container">
             <div id="typingText" class="typing-text"></div>
             <div class="cursor"></div>
         </div>
-
+        <br><br>
 
         <img src="/image/NCSA/ncsa1.jpg" alt="NCSA Board Game 1">
 
@@ -245,9 +245,9 @@
     </div>
     <script>
         const quotes = [
-            "Code is poetry in motion 💻",
-            "Security is not a product, but a process 🛡️",
-            "Hack the system, not the planet 🌍"
+            "Security is not a product, it's a mindset 💻",
+            "Every click you make is a choice for safety or vulnerability. 🛡️",
+            "The strongest shield in cybersecurity is awareness. 🌍"
         ];
 
         function typeWriter(text, element, cursor) {
