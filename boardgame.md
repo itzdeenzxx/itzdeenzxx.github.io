@@ -21,7 +21,7 @@
             left: 0;
             width: 100%;
             text-align: center;
-            font-family: 'Orbitron', sans-serif;
+            font-family: "Kanit", serif;
             margin-top: 20px;
         }
 
@@ -63,7 +63,7 @@
         }
 
         h1, h2, h3, h4 {
-            font-family: 'Orbitron', sans-serif;
+            font-family: "Kanit", serif;
             text-align: center;
             color: var(--primary-color);
             text-transform: uppercase;
