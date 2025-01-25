@@ -11,7 +11,36 @@
             --background-color: #1a2238;
             --text-color: #f4f4f9;
         }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
 
+        .typing-container {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-family: 'Orbitron', sans-serif;
+            margin-top: 20px;
+        }
+
+        .typing-text {
+            color: #00ffff;  /* Neon blue */
+            font-size: 1.5em;
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+            display: inline-block;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 30px;
+            background-color: #00ffff;
+            animation: blink 0.7s infinite;
+            margin-left: 5px;
+        }
         body {
             font-family: "Kanit", serif;
               font-weight: 400;
@@ -146,8 +175,14 @@
 </head>
 <body>
 
-    <div class="content-container">
-        <h1 class="animated-title">🛡️ Cyber Security Board Game: การผจญภัยแห่งความปลอดภัยไซเบอร์ 🌐</h1>
+     <div class="content-container" style="position: relative;">
+         <h1>🛡️ Cyber Security Board Game: การผจญภัยแห่งความปลอดภัยไซเบอร์ 🌐</h1>
+        
+        <div class="typing-container">
+            <div id="typingText" class="typing-text"></div>
+            <div class="cursor"></div>
+        </div>
+
 
         <img src="/image/NCSA/ncsa1.jpg" alt="NCSA Board Game 1">
 
@@ -209,6 +244,49 @@
 
         <img src="/image/NCSA/ncsa8.jpg" alt="NCSA Board Game 8">
     </div>
+    <script>
+        const quotes = [
+            "Code is poetry in motion 💻",
+            "Security is not a product, but a process 🛡️",
+            "Hack the system, not the planet 🌍"
+        ];
 
+        function typeWriter(text, element, cursor) {
+            let i = 0;
+            element.textContent = '';
+            
+            function type() {
+                if (i < text.length) {
+                    element.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, 100);
+                } else {
+                    setTimeout(() => eraseText(text, element, cursor), 2000);
+                }
+            }
+            type();
+        }
+
+        function eraseText(text, element, cursor) {
+            let i = text.length;
+            
+            function erase() {
+                if (i > 0) {
+                    element.textContent = text.substring(0, i - 1);
+                    i--;
+                    setTimeout(erase, 50);
+                } else {
+                    const nextQuote = quotes[(quotes.indexOf(text) + 1) % quotes.length];
+                    typeWriter(nextQuote, element, cursor);
+                }
+            }
+            erase();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const textElement = document.getElementById('typingText');
+            typeWriter(quotes[0], textElement);
+        });
+    </script>
 </body>
 </html>
