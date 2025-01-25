@@ -17,7 +17,6 @@
         }
 
         .typing-container {
-            position: absolute;
             top: 100%;
             left: 0;
             width: 100%;
@@ -27,7 +26,7 @@
         }
 
         .typing-text {
-            color: #00ffff;  /* Neon blue */
+            color: #00ffff;
             font-size: 1.5em;
             text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
             display: inline-block;
