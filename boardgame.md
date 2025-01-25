@@ -1,86 +1,80 @@
-<!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🛡️ Cyber Security Board Game: การผจญภัยแห่งความปลอดภัยไซเบอร์ 🌐</title>
     <style>
-        /* General Styles */
+        :root {
+            --primary-color: #4ecdc4;
+            --secondary-color: #45b7d1;
+            --accent-color: #ff6b6b;
+            --background-color: #1a2238;
+            --text-color: #f4f4f9;
+        }
+
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Press Start 2P', cursive;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         }
 
-        h1, h2, h3 {
+        .content-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(26,34,56,0.9), rgba(26,34,56,0.95));
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Orbitron', sans-serif;
             text-align: center;
-            color: #4ecdc4;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         h1 {
             font-size: 2.5em;
             margin-top: 20px;
-        }
-
-        h2 {
-            font-size: 2em;
-            margin-top: 10px;
-        }
-
-        h3 {
-            font-size: 1.5em;
-            margin-top: 20px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         p {
-            font-size: 1.2em;
+            font-size: 1em;
             max-width: 900px;
             margin: 20px auto;
             text-align: justify;
+            line-height: 1.8;
         }
 
-        .content-container {
-            width: 90%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Animated Title */
-        @keyframes colorRotate {
-            0% { color: #ff6b6b; }
-            20% { color: #4ecdc4; }
-            40% { color: #45b7d1; }
-            60% { color: #f9d56e; }
-            80% { color: #ff9ff3; }
-            100% { color: #ff6b6b; }
-        }
-
-        .animated-title {
-            animation: colorRotate 5s ease infinite;
-            display: inline-block;
-            transition: transform 0.3s ease;
-            color: #333;
-        }
-
-        .animated-title:hover {
-            transform: scale(1.05);
-        }
-
-        /* Image Styles */
         img {
             width: 100%;
             height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+            border-radius: 15px;
+            border: 3px solid var(--secondary-color);
+            transition: transform 0.3s ease;
         }
 
-        /* Layout for the game details */
-        .game-details, .team-info, .quote-section {
-            margin-top: 40px;
+        img:hover {
+            transform: scale(1.02) rotate(1deg);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .game-details {
+            background-color: rgba(69, 183, 209, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border-left: 5px solid var(--accent-color);
         }
 
         .game-details ul {
@@ -89,54 +83,62 @@
         }
 
         .game-details li {
-            font-size: 1.2em;
+            font-size: 1em;
             margin-bottom: 10px;
+            padding: 10px;
+            background-color: rgba(255,255,255,0.05);
+            border-radius: 5px;
         }
 
         .team-info {
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.1);
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
         .team-info a {
-            color: #4ecdc4;
+            color: var(--primary-color);
             text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .team-info a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
         }
 
         .quote-section {
-            background-color: #ff9ff3;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            font-style: italic;
+            background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+            color: var(--text-color);
+            padding: 30px;
+            border-radius: 15px;
             text-align: center;
+            font-style: italic;
+            position: relative;
+            overflow: hidden;
         }
 
-        /* Responsive Styles */
+        .quote-section::before {
+            content: '"';
+            position: absolute;
+            font-size: 10em;
+            opacity: 0.1;
+            top: -50px;
+            left: 10px;
+        }
+
         @media (max-width: 768px) {
-            .content-container {
-                width: 95%;
+            body {
+                font-size: 14px;
             }
 
             h1 {
-                font-size: 2em;
-            }
-
-            h2 {
                 font-size: 1.8em;
-            }
-
-            h3 {
-                font-size: 1.3em;
-            }
-
-            p {
-                font-size: 1.1em;
             }
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -186,7 +188,7 @@
             <p><strong>4. Auksara Suwannawayak</strong> - <a href="https://github.com/AuksaraSuw">GitHub</a></p>
         </div>
 
-        <img src="/image/NCSA/ncsa5.jpg" alt="NCSA Board Game 5">
+        <img src="/image/NCSA/ncsa1.jpg" alt="NCSA Board Game 5">
 
         <div class="quote-section">
             <p>“เยาวชนต้องรู้เท่าทันโลกดิจิทัล การเรียนรู้ผ่านเกมจะช่วยให้เข้าใจและจดจำได้ง่าย เราต้องสร้างภูมิคุ้มกันให้กับคนรุ่นใหม่”</p>
