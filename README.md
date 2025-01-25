@@ -44,6 +44,18 @@ The accuracy of data refers to the degree to which data reflects real-world fact
 
 ---
 
+### 🛡️ Work 4: Cyber Security Board Game
+Explore a fun and educational board game about cyber security principles and challenges:
+- [Learn More and Download (.md file)](boardgame.md)
+
+Features include:
+- Interactive gameplay simulating real-world cyber attack scenarios
+- Focus on raising awareness and enhancing knowledge about cyber security
+- Suitable for all ages with engaging design and mechanics
+- Incorporates educational elements to build safe online practices
+
+---
+
 ### 🌱 Connect With Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/addeen)  
 [![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail)](mailto:addeen.s@ku.th)
