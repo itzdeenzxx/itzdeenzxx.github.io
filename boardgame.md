@@ -21,7 +21,6 @@
 }
 </style>
 
-[Rest of the original content remains the same...]
 
 ![NCSA Board Game 1](/image/NCSA/ncsa1.jpg)
 
