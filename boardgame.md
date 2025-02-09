@@ -220,10 +220,10 @@
 
         <div class="team-info">
             <h3>👥 ทีม Habang:</h3>
-            <p><strong>1. Panumas Chathaisong</strong> - <a href="https://github.com/PanumasChathai">GitHub</a></p>
-            <p><strong>2. Manitchaya Benjajuedsiri</strong> - <a href="https://github.com/ManitchayaBen">GitHub</a></p>
-            <p><strong>3. Teerakorn Tangwattanakit</strong> - <a href="https://github.com/TeerakornTang">GitHub</a></p>
-            <p><strong>4. Auksara Suwannawayak</strong> - <a href="https://github.com/AuksaraSuw">GitHub</a></p>
+            <p><strong>1. Panumas Chathaisong</strong> - <a href="https://panumastt1.github.io/boardgame">GitHub</a></p>
+            <p><strong>2. Manitchaya Benjajuedsiri</strong> - <a href="https://manitchaya2004.github.io/boardgame">GitHub</a></p>
+            <p><strong>3. Teerakorn Tangwattanakit</strong> - <a href="https://teerakorn47.github.io/board-games">GitHub</a></p>
+            <p><strong>4. Auksara Suwannawayak</strong> - <a href="https://auksaraaa.github.io/board-games">GitHub</a></p>
         </div>
 
         <img src="/image/NCSA/ncsa1.jpg" alt="NCSA Board Game 5">
