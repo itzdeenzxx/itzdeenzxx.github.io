@@ -53,6 +53,16 @@ Features include:
 - Focus on raising awareness and enhancing knowledge about cyber security
 - Suitable for all ages with engaging design and mechanics
 - Incorporates educational elements to build safe online practices
+---
+
+### 🛠️ Work 5: JSON Schema Validation  
+Dive into the importance of **JSON Schema Validation** in securing RESTful web services:  
+- [View the Markdown File (.md)](security-requirement.md)
+
+Features include:  
+- Security requirement verification for RESTful services  
+- In-depth explanation with inputs from multiple AI perspectives (ChatGPT, Gemini, My Self)  
+- Practical guidelines for implementing validation to reduce risks of malicious input  
 
 ---
 
